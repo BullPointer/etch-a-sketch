@@ -5,10 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="etch-css/header.css">
+    <link rel="stylesheet" href="etch-css/header-box.css">
+    <link rel="stylesheet" href="etch-css/input.css">
+
+    <title>Etch a Sketch</title>
 </head>
 <body>
+    <header>
+        <div class="box">
+            <div class="color-txt">Click on prefered color</div>
+            <div class="color-box">
+                <div class="black boxes"></div>
+                <div class="red boxes"></div>
+                <div class="blue boxes"></div>
+            </div>
+        </div>
+        <div class="input-btn">
+            click to input the number of squares per side
+        </div>
+    </header>
+
     <div id="container"></div>
+    <script src="etch-js/click.js"></script> 
     <script src="index.js"></script>
 </body>
 </html>

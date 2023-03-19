@@ -1,0 +1,36 @@
+
+header .box {
+    width: 20pc;
+    height: 7pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: rgb(194, 192, 192);
+    border-radius: 10px;
+}
+header .box .color-txt {
+    color: white;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header .box .color-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+header .box .color-box .boxes {
+    width: 70px;
+    height: 35px;
+}
+header .box .color-box .black {
+    background: black;
+}
+header .box .color-box .red {
+    background: red;
+}
+header .box .color-box .blue {
+    background: blue;
+}
