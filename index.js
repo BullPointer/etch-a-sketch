@@ -1,18 +1,18 @@
-const container = document.querySelector("#container");
+//Get input from user
 
+function getInput() {
+    makeRows(16, 16);
+    const input_btn = document.querySelector('.input-btn');
+    input_btn.addEventListener('click', () => {
+        const input = Number(prompt("Give an input from 1-100"));
 
-function makeRows(rows, cols) {
-  container.style.setProperty('--grid-rows', rows);
-  container.style.setProperty('--grid-cols', cols);
+        if (typeof(input) == 'number' && input <= 100) {
+            makeRows(Number(input), Number(input));
+        } else {
+            alert("Input must be number and not greater than 100");
+            makeRows(16, 16);
+        }
+    })
+}
 
-  for (c = 0; c < (rows * cols); c++) {
-    let cell = document.createElement("div");
-    cell.innerText = (c + 1);
-    cell.style.setProperty('--color', 'blue');
-    container.appendChild(cell).className = "grid-item";
-  };
-  clicks();
-};
-
-
-makeRows(16, 16);
+getInput();
